@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* 1-topshiriq boshlanishi */
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    color: white;
+    background-color: darkcyan;
+
+}
+
+.topshiriq_bir__asosiy{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 3px;
+    width: 360px;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 2px;
+    background-color: rgb(15, 36, 36);
+}
+
+.box:nth-child(1){
+    grid-column: 2/3;
+    position: relative;
+    top: -20px;
+}
+.box:nth-child(3){
+    grid-column: 3/4;
+    position: relative;
+    left: 20px;
+}
+.box:nth-child(4){
+    grid-column: 3/4;
+    grid-row: 3/4;    ;
+}
+.box:nth-child(5){
+    grid-column: 2/3;
+    grid-row: 3/4;
+    position: relative;
+    top: 20px;
+}
+.box:nth-child(6){
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.box:nth-child(7){
+    grid-column: 1/2;
+    grid-row: 2/3;
+    position: relative;
+    left: -20px;
+}
+.box:nth-child(8){
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.box:nth-child(9){
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border-radius: 100%;
+    background-color: blue;
+}
+/* 1-topshiriq tugashi */
+
+/* 2-topshiriq boshlsnishi */
+.topshiriq_ikki__asosiy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 360px;
+    height: 360px;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 2px;
+    background-color: rgb(207, 212, 212);
+}
+.box_next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    font-family: sans-serif;
+    color: white;
+}
+.box_next:nth-child(1){
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: red;
+}
+
+
+.box_next:nth-child(2){
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: green;
+}
+
+.box_next:nth-child(3){
+    top: 0px;
+    left: 0px;
+    background-color: rgb(59, 59, 59);
+}
+
+.box_next:nth-child(4){
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: blue;
+}
+
+.box_next:nth-child(5){
+    position: absolute;
+    bottom: 0px;
+    right:0px;
+    background-color: purple;
+}
+
+/* 2-topshiriq tugashi */
+
+/* 3-topshiriq boshlsnishi */
+.topshiriq_uch__asosiy{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 560px;
+    height: 360px;
+    margin: 10px;
+    padding: 25px;
+    gap: 10px 30px;
+    border-radius: 2px;
+    background-color: rgb(207, 212, 212);
+}
+
+.box_last{
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+}
+
+.box_last:nth-child(2){
+    position:relative;
+}
+
+.box_last:nth-child(4){
+    background-color: rgb(233, 90, 190);
+    position: absolute;
+    top: 175px;
+    left: 25px;
+}
+
+
+.box_last:nth-child(5){
+    background-color: rgb(233, 90, 190);
+    position: absolute;
+    top: 175px;
+    left: 205px;
+}
+
+.box_last:nth-child(6){
+    background-color: rgb(233, 90, 190);
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+
+.box_last__box{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(114, 111, 111);
+    color: black;
+    position: absolute;
+    top: 20px;
+}
+
+
+/* 3-topshiriq tugashi */
